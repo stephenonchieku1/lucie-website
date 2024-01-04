@@ -1,0 +1,166 @@
+{
+  "name": "lucie-website",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/lucie-website/src",
+  "prefix": "lucie-website",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/apps/lucie-website/browser",
+        "index": "apps/lucie-website/src/index.html",
+        "main": "apps/lucie-website/src/main.ts",
+        "polyfills": "apps/lucie-website/src/polyfills.ts",
+        "tsConfig": "apps/lucie-website/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/lucie-website/src/favicon.ico",
+          "apps/lucie-website/src/assets"
+        ],
+        "styles": [
+          "apps/lucie-website/src/styles.scss",
+          "libs/elements/theming/_variables.scss"
+        ],
+        "stylePreprocessorOptions": {
+          "includePaths": ["./libs/elements/theming"]
+        },
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/lucie-website/src/environments/environment.ts",
+              "with": "apps/lucie-website/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "lucie-website:build:production"
+        },
+        "development": {
+          "browserTarget": "lucie-website:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "lucie-website:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/lucie-website/**/*.ts",
+          "apps/lucie-website/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/apps/lucie-website"
+      ],
+      "options": {
+        "jestConfig": "apps/lucie-website/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "server": {
+      "executor": "@angular-devkit/build-angular:server",
+      "options": {
+        "outputPath": "dist/lucie-website/server",
+        "main": "apps/lucie-website/server.ts",
+        "tsConfig": "apps/lucie-website/tsconfig.server.json",
+        "inlineStyleLanguage": "scss"
+      },
+      "configurations": {
+        "production": {
+          "outputHashing": "media",
+          "fileReplacements": [
+            {
+              "replace": "apps/lucie-website/src/environments/environment.ts",
+              "with": "apps/lucie-website/src/environments/environment.prod.ts"
+            }
+          ]
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "sourceMap": true,
+          "extractLicenses": false,
+          "vendorChunk": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve-ssr": {
+      "executor": "@nguniversal/builders:ssr-dev-server",
+      "configurations": {
+        "development": {
+          "browserTarget": "lucie-website:build:development",
+          "serverTarget": "lucie-website:server:development"
+        },
+        "production": {
+          "browserTarget": "lucie-website:build:production",
+          "serverTarget": "lucie-website:server:production"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "prerender": {
+      "executor": "@nguniversal/builders:prerender",
+      "options": {
+        "routes": [
+          "/"
+        ]
+      },
+      "configurations": {
+        "production": {
+          "browserTarget": "lucie-website:build:production",
+          "serverTarget": "lucie-website:server:production"
+        },
+        "development": {
+          "browserTarget": "lucie-website:build:development",
+          "serverTarget": "lucie-website:server:development"
+        }
+      },
+      "defaultConfiguration": "production"
+    }
+  },
+  "tags": []
+}

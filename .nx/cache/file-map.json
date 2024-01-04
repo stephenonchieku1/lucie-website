@@ -1,0 +1,829 @@
+{
+  "version": "6.0",
+  "nxVersion": "16.6.0",
+  "deps": {
+    "@angular/animations": "16.1.7",
+    "@angular/common": "16.1.7",
+    "@angular/compiler": "16.1.7",
+    "@angular/core": "16.1.7",
+    "@angular/forms": "16.1.7",
+    "@angular/platform-browser": "16.1.7",
+    "@angular/platform-browser-dynamic": "16.1.7",
+    "@angular/platform-server": "16.1.7",
+    "@angular/router": "16.1.7",
+    "@ngneat/transloco": "^5.0.2",
+    "@nguniversal/express-engine": "^16.1.1",
+    "@nrwl/angular": "16.6.0",
+    "express": "^4.15.2",
+    "rxjs": "7.8.1",
+    "tslib": "^2.3.0",
+    "zone.js": "0.13.1",
+    "@angular-devkit/build-angular": "16.1.6",
+    "@angular-devkit/core": "16.1.6",
+    "@angular-devkit/schematics": "16.1.6",
+    "@angular-eslint/eslint-plugin": "16.0.3",
+    "@angular-eslint/eslint-plugin-template": "16.0.3",
+    "@angular-eslint/template-parser": "16.0.3",
+    "@angular/cli": "~16.0.3",
+    "@angular/compiler-cli": "16.1.7",
+    "@angular/language-service": "16.1.7",
+    "@nguniversal/builders": "^16.1.1",
+    "@nrwl/cli": "14.8.8",
+    "@nrwl/cypress": "16.6.0",
+    "@nrwl/eslint-plugin-nx": "16.6.0",
+    "@nrwl/jest": "16.6.0",
+    "@nrwl/linter": "16.6.0",
+    "@nrwl/node": "^16.6.0",
+    "@nrwl/workspace": "16.6.0",
+    "@nx/jest": "16.6.0",
+    "@nx/js": "16.6.0",
+    "@nx/node": "16.6.0",
+    "@schematics/angular": "16.1.6",
+    "@types/express": "^4.17.0",
+    "@types/jest": "29.4.4",
+    "@types/node": "~18.7.1",
+    "@typescript-eslint/eslint-plugin": "5.62.0",
+    "@typescript-eslint/parser": "5.62.0",
+    "cypress": "^10.7.0",
+    "eslint": "~8.15.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-cypress": "^2.10.3",
+    "jest": "29.4.3",
+    "jest-environment-jsdom": "29.4.3",
+    "jest-environment-node": "^29.4.1",
+    "jest-preset-angular": "13.1.1",
+    "nx": "16.6.0",
+    "prettier": "^2.6.2",
+    "ts-jest": "29.1.1",
+    "ts-node": "10.9.1",
+    "typescript": "5.1.6"
+  },
+  "pathMappings": {
+    "@elewa-website/elements/layout/header": [
+      "libs/elements/layout/header/src/index.ts"
+    ],
+    "@elewa-website/cards": [
+      "libs/cards/src/index.ts"
+    ],
+    "@elewa-website/elements/cards": [
+      "libs/elements/cards/src/index.ts"
+    ],
+    "@elewa-website/data/ui/content-text": [
+      "libs/data/ui/content-text/src/index.ts"
+    ],
+    "@elewa-website/elements/layout/texts": [
+      "libs/elements/layout/texts/src/index.ts"
+    ],
+    "@elewa-website/features/pages/about": [
+      "libs/features/pages/about/src/index.ts"
+    ],
+    "@elewa-website/features/pages/home": [
+      "libs/features/pages/home/src/index.ts"
+    ],
+    "@elewa-website/models/data/ui": [
+      "libs/models/data/ui/src/index.ts"
+    ],
+    "@elewa-website/models/schema/ui/cards": [
+      "libs/models/schema/ui/cards/src/index.ts"
+    ],
+    "@elewa-website/models/schema/ui/texts": [
+      "libs/models/schema/ui/texts/src/index.ts"
+    ],
+    "@elewa-website/models/ui/images": [
+      "libs/models/ui/images/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "projectFileMap": {
+    "lucie-website-e2e": [
+      {
+        "file": "apps/lucie-website-e2e/.eslintrc.json",
+        "hash": "15523834149352881398"
+      },
+      {
+        "file": "apps/lucie-website-e2e/cypress.config.ts",
+        "hash": "212614215478757206",
+        "deps": [
+          "npm:cypress",
+          "npm:@nrwl/cypress"
+        ]
+      },
+      {
+        "file": "apps/lucie-website-e2e/project.json",
+        "hash": "11554474348100345772"
+      },
+      {
+        "file": "apps/lucie-website-e2e/src/e2e/app.cy.ts",
+        "hash": "560315947605732934"
+      },
+      {
+        "file": "apps/lucie-website-e2e/src/fixtures/example.json",
+        "hash": "11614668686582597233"
+      },
+      {
+        "file": "apps/lucie-website-e2e/src/support/app.po.ts",
+        "hash": "11157016311132186162"
+      },
+      {
+        "file": "apps/lucie-website-e2e/src/support/commands.ts",
+        "hash": "7314691991044890572"
+      },
+      {
+        "file": "apps/lucie-website-e2e/src/support/e2e.ts",
+        "hash": "3666078656922506009"
+      },
+      {
+        "file": "apps/lucie-website-e2e/tsconfig.json",
+        "hash": "3839629211904585536"
+      }
+    ],
+    "elements-layout-header": [
+      {
+        "file": "libs/elements/layout/header/.eslintrc.json",
+        "hash": "10813456432126434101"
+      },
+      {
+        "file": "libs/elements/layout/header/README.md",
+        "hash": "17004868483874848090"
+      },
+      {
+        "file": "libs/elements/layout/header/jest.config.ts",
+        "hash": "1544372982666058371"
+      },
+      {
+        "file": "libs/elements/layout/header/project.json",
+        "hash": "15029161139210590807"
+      },
+      {
+        "file": "libs/elements/layout/header/src/index.ts",
+        "hash": "9050064474871124960"
+      },
+      {
+        "file": "libs/elements/layout/header/src/lib/app-header.module.ts",
+        "hash": "3468533495474997196",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/common",
+          "npm:@ngneat/transloco"
+        ]
+      },
+      {
+        "file": "libs/elements/layout/header/src/lib/components/header/header.component.html",
+        "hash": "8950452847518176631"
+      },
+      {
+        "file": "libs/elements/layout/header/src/lib/components/header/header.component.scss",
+        "hash": "8303595002179792130"
+      },
+      {
+        "file": "libs/elements/layout/header/src/lib/components/header/header.component.spec.ts",
+        "hash": "1274049401976839126",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/elements/layout/header/src/lib/components/header/header.component.ts",
+        "hash": "15297046239807970431",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/elements/layout/header/src/lib/directives/toggle-menu.directive.spec.ts",
+        "hash": "15397930208441872640"
+      },
+      {
+        "file": "libs/elements/layout/header/src/lib/directives/toggle-menu.directive.ts",
+        "hash": "2126187370964991601",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/elements/layout/header/src/test-setup.ts",
+        "hash": "12935735732682149507",
+        "deps": [
+          "npm:jest-preset-angular"
+        ]
+      },
+      {
+        "file": "libs/elements/layout/header/tsconfig.json",
+        "hash": "16248533471678702062"
+      },
+      {
+        "file": "libs/elements/layout/header/tsconfig.lib.json",
+        "hash": "8746075233993636049"
+      },
+      {
+        "file": "libs/elements/layout/header/tsconfig.spec.json",
+        "hash": "9840611283105717156"
+      }
+    ],
+    "features-pages-home": [
+      {
+        "file": "libs/features/pages/home/.eslintrc.json",
+        "hash": "10813456432126434101"
+      },
+      {
+        "file": "libs/features/pages/home/README.md",
+        "hash": "2522790608170768754"
+      },
+      {
+        "file": "libs/features/pages/home/jest.config.ts",
+        "hash": "4551761448292465378"
+      },
+      {
+        "file": "libs/features/pages/home/project.json",
+        "hash": "5502114133112499919"
+      },
+      {
+        "file": "libs/features/pages/home/src/index.ts",
+        "hash": "7632378216289493783"
+      },
+      {
+        "file": "libs/features/pages/home/src/lib/features-pages-home.module.ts",
+        "hash": "947507972803483428",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/common"
+        ]
+      },
+      {
+        "file": "libs/features/pages/home/src/lib/home.routing.ts",
+        "hash": "15022381791183063222",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/router"
+        ]
+      },
+      {
+        "file": "libs/features/pages/home/src/lib/main/home/home-page.component.html",
+        "hash": "16021802280447302605"
+      },
+      {
+        "file": "libs/features/pages/home/src/lib/main/home/home-page.component.scss",
+        "hash": "6207901734847642946"
+      },
+      {
+        "file": "libs/features/pages/home/src/lib/main/home/home-page.component.spec.ts",
+        "hash": "2283163810985781060",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/features/pages/home/src/lib/main/home/home-page.component.ts",
+        "hash": "15902628405851843385",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/features/pages/home/src/test-setup.ts",
+        "hash": "12935735732682149507",
+        "deps": [
+          "npm:jest-preset-angular"
+        ]
+      },
+      {
+        "file": "libs/features/pages/home/tsconfig.json",
+        "hash": "16248533471678702062"
+      },
+      {
+        "file": "libs/features/pages/home/tsconfig.lib.json",
+        "hash": "8746075233993636049"
+      },
+      {
+        "file": "libs/features/pages/home/tsconfig.spec.json",
+        "hash": "9840611283105717156"
+      }
+    ],
+    "models-schema-ui-texts": [
+      {
+        "file": "libs/models/schema/ui/texts/.eslintrc.json",
+        "hash": "8437903270990702588"
+      },
+      {
+        "file": "libs/models/schema/ui/texts/README.md",
+        "hash": "11502040448221959291"
+      },
+      {
+        "file": "libs/models/schema/ui/texts/jest.config.ts",
+        "hash": "16145021743018678813"
+      },
+      {
+        "file": "libs/models/schema/ui/texts/project.json",
+        "hash": "2939056402135604445"
+      },
+      {
+        "file": "libs/models/schema/ui/texts/src/index.ts",
+        "hash": "18417599429050887650"
+      },
+      {
+        "file": "libs/models/schema/ui/texts/src/lib/content-text.interface.ts",
+        "hash": "17121146289856830019"
+      },
+      {
+        "file": "libs/models/schema/ui/texts/src/test-setup.ts",
+        "hash": "12935735732682149507",
+        "deps": [
+          "npm:jest-preset-angular"
+        ]
+      },
+      {
+        "file": "libs/models/schema/ui/texts/tsconfig.json",
+        "hash": "15064525358714244092"
+      },
+      {
+        "file": "libs/models/schema/ui/texts/tsconfig.lib.json",
+        "hash": "9669409076303669727"
+      },
+      {
+        "file": "libs/models/schema/ui/texts/tsconfig.spec.json",
+        "hash": "16136671043651190719"
+      }
+    ],
+    "elements-cards": [
+      {
+        "file": "libs/elements/cards/.eslintrc.json",
+        "hash": "15590811313769896852"
+      },
+      {
+        "file": "libs/elements/cards/README.md",
+        "hash": "7576922344311625668"
+      },
+      {
+        "file": "libs/elements/cards/jest.config.ts",
+        "hash": "16784695853397450835"
+      },
+      {
+        "file": "libs/elements/cards/project.json",
+        "hash": "2115863066337531297"
+      },
+      {
+        "file": "libs/elements/cards/src/index.ts",
+        "hash": "8802175150668277772"
+      },
+      {
+        "file": "libs/elements/cards/src/lib/cards.module.ts",
+        "hash": "14606636742861045745",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/common"
+        ]
+      },
+      {
+        "file": "libs/elements/cards/src/lib/elewa-info-card/elewa-info-card.component.html",
+        "hash": "12153324687163602883"
+      },
+      {
+        "file": "libs/elements/cards/src/lib/elewa-info-card/elewa-info-card.component.scss",
+        "hash": "8849019125678616039"
+      },
+      {
+        "file": "libs/elements/cards/src/lib/elewa-info-card/elewa-info-card.component.spec.ts",
+        "hash": "17236896012558605195",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/elements/cards/src/lib/elewa-info-card/elewa-info-card.component.ts",
+        "hash": "16434327176196948395",
+        "deps": [
+          "npm:@angular/core",
+          "models-schema-ui-cards"
+        ]
+      },
+      {
+        "file": "libs/elements/cards/src/test-setup.ts",
+        "hash": "12935735732682149507",
+        "deps": [
+          "npm:jest-preset-angular"
+        ]
+      },
+      {
+        "file": "libs/elements/cards/tsconfig.json",
+        "hash": "8526453262384300416"
+      },
+      {
+        "file": "libs/elements/cards/tsconfig.lib.json",
+        "hash": "6020606002228403423"
+      },
+      {
+        "file": "libs/elements/cards/tsconfig.spec.json",
+        "hash": "7159729809249402441"
+      }
+    ],
+    "features-pages-about": [
+      {
+        "file": "libs/features/pages/about/.eslintrc.json",
+        "hash": "10813456432126434101"
+      },
+      {
+        "file": "libs/features/pages/about/README.md",
+        "hash": "5000388878907714226"
+      },
+      {
+        "file": "libs/features/pages/about/jest.config.ts",
+        "hash": "18428921375939119482"
+      },
+      {
+        "file": "libs/features/pages/about/project.json",
+        "hash": "12384892574354262922"
+      },
+      {
+        "file": "libs/features/pages/about/src/index.ts",
+        "hash": "3381742856115651803"
+      },
+      {
+        "file": "libs/features/pages/about/src/lib/features-pages-about.module.ts",
+        "hash": "10743742007156847037",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/common"
+        ]
+      },
+      {
+        "file": "libs/features/pages/about/src/test-setup.ts",
+        "hash": "12935735732682149507",
+        "deps": [
+          "npm:jest-preset-angular"
+        ]
+      },
+      {
+        "file": "libs/features/pages/about/tsconfig.json",
+        "hash": "16248533471678702062"
+      },
+      {
+        "file": "libs/features/pages/about/tsconfig.lib.json",
+        "hash": "8746075233993636049"
+      },
+      {
+        "file": "libs/features/pages/about/tsconfig.spec.json",
+        "hash": "9840611283105717156"
+      }
+    ],
+    "models-schema-ui-cards": [
+      {
+        "file": "libs/models/schema/ui/cards/.eslintrc.json",
+        "hash": "8437903270990702588"
+      },
+      {
+        "file": "libs/models/schema/ui/cards/README.md",
+        "hash": "9024505527094043146"
+      },
+      {
+        "file": "libs/models/schema/ui/cards/jest.config.ts",
+        "hash": "4457112250248963838"
+      },
+      {
+        "file": "libs/models/schema/ui/cards/project.json",
+        "hash": "5840927723913769206"
+      },
+      {
+        "file": "libs/models/schema/ui/cards/src/index.ts",
+        "hash": "3617310859732681027"
+      },
+      {
+        "file": "libs/models/schema/ui/cards/src/lib/info-card.interface.ts",
+        "hash": "3392474523556203797"
+      },
+      {
+        "file": "libs/models/schema/ui/cards/src/test-setup.ts",
+        "hash": "12935735732682149507",
+        "deps": [
+          "npm:jest-preset-angular"
+        ]
+      },
+      {
+        "file": "libs/models/schema/ui/cards/tsconfig.json",
+        "hash": "15064525358714244092"
+      },
+      {
+        "file": "libs/models/schema/ui/cards/tsconfig.lib.json",
+        "hash": "9669409076303669727"
+      },
+      {
+        "file": "libs/models/schema/ui/cards/tsconfig.spec.json",
+        "hash": "16136671043651190719"
+      }
+    ],
+    "elements-layout-texts": [
+      {
+        "file": "libs/elements/layout/texts/.eslintrc.json",
+        "hash": "10813456432126434101"
+      },
+      {
+        "file": "libs/elements/layout/texts/README.md",
+        "hash": "2976406549369438283"
+      },
+      {
+        "file": "libs/elements/layout/texts/jest.config.ts",
+        "hash": "6449854232031905694"
+      },
+      {
+        "file": "libs/elements/layout/texts/project.json",
+        "hash": "14070709232090637040"
+      },
+      {
+        "file": "libs/elements/layout/texts/src/index.ts",
+        "hash": "3795177455682940502"
+      },
+      {
+        "file": "libs/elements/layout/texts/src/lib/components/elewa-text-content-item/elewa-text-content-item.component.html",
+        "hash": "3329751870608680315"
+      },
+      {
+        "file": "libs/elements/layout/texts/src/lib/components/elewa-text-content-item/elewa-text-content-item.component.scss",
+        "hash": "12385825664927134679"
+      },
+      {
+        "file": "libs/elements/layout/texts/src/lib/components/elewa-text-content-item/elewa-text-content-item.component.ts",
+        "hash": "2321384434168385462",
+        "deps": [
+          "npm:@angular/core",
+          "data-ui-content-text",
+          "models-schema-ui-texts"
+        ]
+      },
+      {
+        "file": "libs/elements/layout/texts/src/lib/texts.module.ts",
+        "hash": "11394590660706544640",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/common"
+        ]
+      },
+      {
+        "file": "libs/elements/layout/texts/src/test-setup.ts",
+        "hash": "12935735732682149507",
+        "deps": [
+          "npm:jest-preset-angular"
+        ]
+      },
+      {
+        "file": "libs/elements/layout/texts/tsconfig.json",
+        "hash": "16248533471678702062"
+      },
+      {
+        "file": "libs/elements/layout/texts/tsconfig.lib.json",
+        "hash": "8746075233993636049"
+      },
+      {
+        "file": "libs/elements/layout/texts/tsconfig.spec.json",
+        "hash": "9840611283105717156"
+      }
+    ],
+    "data-ui-content-text": [
+      {
+        "file": "libs/data/ui/content-text/.eslintrc.json",
+        "hash": "10813456432126434101"
+      },
+      {
+        "file": "libs/data/ui/content-text/README.md",
+        "hash": "8629184631994524713"
+      },
+      {
+        "file": "libs/data/ui/content-text/jest.config.ts",
+        "hash": "10615034941468783795"
+      },
+      {
+        "file": "libs/data/ui/content-text/project.json",
+        "hash": "225151630861751091"
+      },
+      {
+        "file": "libs/data/ui/content-text/src/index.ts",
+        "hash": "14353015695798581739"
+      },
+      {
+        "file": "libs/data/ui/content-text/src/lib/mock-content-text.data.ts",
+        "hash": "3634619637537959455",
+        "deps": [
+          "models-schema-ui-texts"
+        ]
+      },
+      {
+        "file": "libs/data/ui/content-text/src/test-setup.ts",
+        "hash": "12935735732682149507",
+        "deps": [
+          "npm:jest-preset-angular"
+        ]
+      },
+      {
+        "file": "libs/data/ui/content-text/tsconfig.json",
+        "hash": "16248533471678702062"
+      },
+      {
+        "file": "libs/data/ui/content-text/tsconfig.lib.json",
+        "hash": "8746075233993636049"
+      },
+      {
+        "file": "libs/data/ui/content-text/tsconfig.spec.json",
+        "hash": "9840611283105717156"
+      }
+    ],
+    "lucie-website": [
+      {
+        "file": "apps/lucie-website/.browserslistrc",
+        "hash": "17600754102500844387"
+      },
+      {
+        "file": "apps/lucie-website/.eslintrc.json",
+        "hash": "2228338436450525902"
+      },
+      {
+        "file": "apps/lucie-website/jest.config.ts",
+        "hash": "16686057124727723610"
+      },
+      {
+        "file": "apps/lucie-website/project.json",
+        "hash": "9494144298633124237"
+      },
+      {
+        "file": "apps/lucie-website/server.ts",
+        "hash": "7526773812245141487",
+        "deps": [
+          "npm:zone.js",
+          "npm:@angular/common",
+          "npm:@nguniversal/express-engine",
+          "npm:express",
+          "npm:node:fs",
+          "npm:node:path"
+        ]
+      },
+      {
+        "file": "apps/lucie-website/src/app/app.component.html",
+        "hash": "9782028607131829189"
+      },
+      {
+        "file": "apps/lucie-website/src/app/app.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/lucie-website/src/app/app.component.spec.ts",
+        "hash": "3512079913772779571",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "apps/lucie-website/src/app/app.component.ts",
+        "hash": "10820165378619415240",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "apps/lucie-website/src/app/app.module.ts",
+        "hash": "7048834564552093573",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/platform-browser",
+          "npm:@angular/common",
+          "elements-layout-header"
+        ]
+      },
+      {
+        "file": "apps/lucie-website/src/app/app.routing.ts",
+        "hash": "14430612928432795314",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/router",
+          [
+            "features-pages-home",
+            "dynamic"
+          ],
+          [
+            "features-pages-about",
+            "dynamic"
+          ]
+        ]
+      },
+      {
+        "file": "apps/lucie-website/src/app/app.server.module.ts",
+        "hash": "7885674756072090716",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/platform-server"
+        ]
+      },
+      {
+        "file": "apps/lucie-website/src/app/transloco-loader.ts",
+        "hash": "7840055094845870536",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/common",
+          "npm:@ngneat/transloco"
+        ]
+      },
+      {
+        "file": "apps/lucie-website/src/app/transloco-root.module.ts",
+        "hash": "11870987240881941669",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@ngneat/transloco"
+        ]
+      },
+      {
+        "file": "apps/lucie-website/src/assets/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/lucie-website/src/assets/fonts/DM_Sans/DMSans-Bold.ttf",
+        "hash": "7728810104543163037"
+      },
+      {
+        "file": "apps/lucie-website/src/assets/fonts/DM_Sans/DMSans-BoldItalic.ttf",
+        "hash": "11595278551223208028"
+      },
+      {
+        "file": "apps/lucie-website/src/assets/fonts/DM_Sans/DMSans-Italic.ttf",
+        "hash": "14985242908497460182"
+      },
+      {
+        "file": "apps/lucie-website/src/assets/fonts/DM_Sans/DMSans-Medium.ttf",
+        "hash": "13591014697965443814"
+      },
+      {
+        "file": "apps/lucie-website/src/assets/fonts/DM_Sans/DMSans-MediumItalic.ttf",
+        "hash": "17544586933383807445"
+      },
+      {
+        "file": "apps/lucie-website/src/assets/fonts/DM_Sans/DMSans-Regular.ttf",
+        "hash": "12993839305951811160"
+      },
+      {
+        "file": "apps/lucie-website/src/assets/fonts/DM_Sans/OFL.txt",
+        "hash": "943173108191014779"
+      },
+      {
+        "file": "apps/lucie-website/src/assets/i18n/en.json",
+        "hash": "11838517569436022785"
+      },
+      {
+        "file": "apps/lucie-website/src/assets/i18n/es.json",
+        "hash": "360569415965898736"
+      },
+      {
+        "file": "apps/lucie-website/src/favicon.ico",
+        "hash": "9303420814833116677"
+      },
+      {
+        "file": "apps/lucie-website/src/index.html",
+        "hash": "11127245275671299285"
+      },
+      {
+        "file": "apps/lucie-website/src/main.server.ts",
+        "hash": "6133169593449748856"
+      },
+      {
+        "file": "apps/lucie-website/src/main.ts",
+        "hash": "14896519517424602606",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/platform-browser-dynamic"
+        ]
+      },
+      {
+        "file": "apps/lucie-website/src/polyfills.ts",
+        "hash": "13952578668946952738",
+        "deps": [
+          "npm:zone.js"
+        ]
+      },
+      {
+        "file": "apps/lucie-website/src/styles.scss",
+        "hash": "15798840959338004292"
+      },
+      {
+        "file": "apps/lucie-website/src/test-setup.ts",
+        "hash": "17711435995618823417",
+        "deps": [
+          "npm:jest-preset-angular"
+        ]
+      },
+      {
+        "file": "apps/lucie-website/tsconfig.app.json",
+        "hash": "4072314766346000239"
+      },
+      {
+        "file": "apps/lucie-website/tsconfig.editor.json",
+        "hash": "6367495026318685054"
+      },
+      {
+        "file": "apps/lucie-website/tsconfig.json",
+        "hash": "17981161305287108769"
+      },
+      {
+        "file": "apps/lucie-website/tsconfig.server.json",
+        "hash": "7348352484247221093"
+      },
+      {
+        "file": "apps/lucie-website/tsconfig.spec.json",
+        "hash": "6658172359945877284"
+      }
+    ]
+  }
+}
