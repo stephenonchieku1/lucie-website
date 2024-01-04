@@ -453,7 +453,7 @@
       },
       {
         "file": "libs/elements/layout/footer/src/lib/elements-layout-footer.module.ts",
-        "hash": "2840798860884295692",
+        "hash": "16991666992145935594",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common"
@@ -489,6 +489,24 @@
       {
         "file": "libs/elements/layout/footer/tsconfig.spec.json",
         "hash": "9840611283105717156"
+      },
+      {
+        "file": "libs/elements/layout/footer/src/lib/footer/footer.component.spec.ts",
+        "hash": "2028942538878780779",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/elements/layout/footer/src/lib/footer/footer.component.ts",
+        "hash": "1485253264561788435",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/elements/layout/footer/src/lib/footer/footer.component.html",
+        "hash": "4870840326542635113"
       }
     ],
     "data-ui-content-text": [
@@ -737,7 +755,7 @@
       },
       {
         "file": "libs/elements/layout/header/src/lib/components/header/header.component.html",
-        "hash": "10820214207257086854"
+        "hash": "4490885899838308075"
       },
       {
         "file": "libs/elements/layout/header/src/lib/components/header/header.component.scss",
