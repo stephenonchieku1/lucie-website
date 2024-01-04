@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run lucie-website:extract-i18n",
+    "startTime": "2024-01-04T18:38:07.003Z",
+    "endTime": "2024-01-04T18:38:14.941Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "lucie-website:extract-i18n",
+      "target": "extract-i18n",
+      "projectName": "lucie-website",
+      "hash": "13269215136998005909",
+      "startTime": "2024-01-04T18:38:07.041Z",
+      "endTime": "2024-01-04T18:38:14.938Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

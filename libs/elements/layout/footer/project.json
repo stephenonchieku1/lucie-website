@@ -1,0 +1,52 @@
+{
+  "name": "elements-layout-footer",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/elements/layout/footer/src",
+  "prefix": "lucie-website",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/elements/layout/footer/ng-package.json",
+        "tailwindConfig": "libs/elements/layout/footer/tailwind.config.js"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/elements/layout/footer/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/elements/layout/footer/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/elements/layout/footer/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/elements/layout/footer/**/*.ts",
+          "libs/elements/layout/footer/**/*.html",
+          "libs/elements/layout/footer/package.json"
+        ]
+      }
+    }
+  }
+}
