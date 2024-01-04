@@ -1,10 +1,10 @@
 {
-    "ELEWA-WEBSITE-HEADER": {
+    "LUCIE-WEBSITE-HEADER": {
       "SOLUTIONS": "Solutions",
-      "PROJECTS": "Projects",
-      "COMPANY": "Company",
-      "NEWS": "News",
+      "PROPERTY": "List Your Property",
+      "SIGNUP": "Sign Up",
+      "LOGIN": "Log In",
       "CONTACT-US": "Contact Us",
-      "LOGO-ALT": "Elewa Company Logo"
+      "LOGO-ALT": "SLucie Company Logo"
     }
   }
