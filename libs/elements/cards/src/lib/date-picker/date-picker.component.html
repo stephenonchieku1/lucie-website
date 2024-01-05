@@ -10,7 +10,12 @@
     </mat-date-range-input>
     <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
     <mat-datepicker-toggle matIconSuffix [for]="campaignOnePicker"></mat-datepicker-toggle>
-    <mat-date-range-picker #campaignOnePicker></mat-date-range-picker>
+    <mat-date-range-picker #campaignOnePicker>
+        <mat-date-range-picker-actions>
+            <button mat-button matDateRangePickerCancel>Cancel</button>
+            <button mat-raised-button color="primary" matDateRangePickerApply>Apply</button>
+          </mat-date-range-picker-actions>
+    </mat-date-range-picker>
   </mat-form-field>
   
   <mat-form-field class="example-form-field">
@@ -25,6 +30,13 @@
     </mat-date-range-input>
     <mat-datepicker-toggle matIconSuffix [for]="campaignTwoPicker"></mat-datepicker-toggle>
     <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
-    <mat-date-range-picker #campaignTwoPicker></mat-date-range-picker>
+    <mat-date-range-picker #campaignTwoPicker>
+        <mat-date-range-picker-actions>
+            <button mat-button matDateRangePickerCancel>Cancel</button>
+            <button mat-raised-button color="primary" matDateRangePickerApply>Apply</button>
+          </mat-date-range-picker-actions>
+    </mat-date-range-picker>
+
+
   </mat-form-field>
   
