@@ -22,11 +22,14 @@
           "apps/lucie-website/src/assets"
         ],
         "styles": [
+          "@angular/material/prebuilt-themes/purple-green.css",
           "apps/lucie-website/src/styles.scss",
           "libs/elements/theming/_variables.scss"
         ],
         "stylePreprocessorOptions": {
-          "includePaths": ["./libs/elements/theming"]
+          "includePaths": [
+            "./libs/elements/theming"
+          ]
         },
         "scripts": []
       },

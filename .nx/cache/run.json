@@ -1,18 +1,18 @@
 {
   "run": {
-    "command": "nx run lucie-website:extract-i18n",
-    "startTime": "2024-01-04T18:38:07.003Z",
-    "endTime": "2024-01-04T18:38:14.941Z",
+    "command": "nx serve",
+    "startTime": "2024-01-04T17:50:22.794Z",
+    "endTime": "2024-01-04T22:20:50.140Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "lucie-website:extract-i18n",
-      "target": "extract-i18n",
+      "taskId": "lucie-website:serve:development",
+      "target": "serve",
       "projectName": "lucie-website",
-      "hash": "13269215136998005909",
-      "startTime": "2024-01-04T18:38:07.041Z",
-      "endTime": "2024-01-04T18:38:14.938Z",
+      "hash": "7039831268612104170",
+      "startTime": "2024-01-04T17:50:22.862Z",
+      "endTime": "2024-01-04T22:20:50.128Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1
