@@ -45,6 +45,9 @@
       ],
       "@lucie-website/features/pages/loginpage": [
         "libs/features/pages/loginpage/src/index.ts"
+      ],
+      "@lucie-website/features/pages/signup": [
+        "libs/features/pages/signup/src/index.ts"
       ]
     }
   },

@@ -54,17 +54,43 @@
         "implicitDependencies": []
       }
     },
-    "models-schema-ui-texts": {
-      "name": "models-schema-ui-texts",
+    "elements-layout-footer": {
+      "name": "elements-layout-footer",
       "type": "lib",
       "data": {
-        "name": "models-schema-ui-texts",
-        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/models/schema/ui/texts/src",
-        "prefix": "elewa-website",
+        "name": "elements-layout-footer",
+        "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/elements/layout/footer/src",
+        "prefix": "lucie-website",
         "tags": [],
         "projectType": "library",
         "targets": {
+          "build": {
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ],
+            "executor": "@nx/angular:ng-packagr-lite",
+            "outputs": [
+              "{workspaceRoot}/dist/{projectRoot}"
+            ],
+            "options": {
+              "project": "libs/elements/layout/footer/ng-package.json",
+              "tailwindConfig": "libs/elements/layout/footer/tailwind.config.js"
+            },
+            "configurations": {
+              "production": {
+                "tsConfig": "libs/elements/layout/footer/tsconfig.lib.prod.json"
+              },
+              "development": {
+                "tsConfig": "libs/elements/layout/footer/tsconfig.lib.json"
+              }
+            },
+            "defaultConfiguration": "production"
+          },
           "test": {
             "inputs": [
               "default",
@@ -76,7 +102,7 @@
               "{workspaceRoot}/coverage/{projectRoot}"
             ],
             "options": {
-              "jestConfig": "libs/models/schema/ui/texts/jest.config.ts",
+              "jestConfig": "libs/elements/layout/footer/jest.config.ts",
               "passWithNoTests": true
             },
             "configurations": {
@@ -97,14 +123,15 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "libs/models/schema/ui/texts/**/*.ts",
-                "libs/models/schema/ui/texts/**/*.html"
+                "libs/elements/layout/footer/**/*.ts",
+                "libs/elements/layout/footer/**/*.html",
+                "libs/elements/layout/footer/package.json"
               ]
             },
             "configurations": {}
           }
         },
-        "root": "libs/models/schema/ui/texts",
+        "root": "libs/elements/layout/footer",
         "implicitDependencies": []
       }
     },
@@ -216,43 +243,17 @@
         "implicitDependencies": []
       }
     },
-    "elements-layout-footer": {
-      "name": "elements-layout-footer",
+    "models-schema-ui-texts": {
+      "name": "models-schema-ui-texts",
       "type": "lib",
       "data": {
-        "name": "elements-layout-footer",
-        "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/elements/layout/footer/src",
-        "prefix": "lucie-website",
+        "name": "models-schema-ui-texts",
+        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/models/schema/ui/texts/src",
+        "prefix": "elewa-website",
         "tags": [],
         "projectType": "library",
         "targets": {
-          "build": {
-            "dependsOn": [
-              "^build"
-            ],
-            "inputs": [
-              "production",
-              "^production"
-            ],
-            "executor": "@nx/angular:ng-packagr-lite",
-            "outputs": [
-              "{workspaceRoot}/dist/{projectRoot}"
-            ],
-            "options": {
-              "project": "libs/elements/layout/footer/ng-package.json",
-              "tailwindConfig": "libs/elements/layout/footer/tailwind.config.js"
-            },
-            "configurations": {
-              "production": {
-                "tsConfig": "libs/elements/layout/footer/tsconfig.lib.prod.json"
-              },
-              "development": {
-                "tsConfig": "libs/elements/layout/footer/tsconfig.lib.json"
-              }
-            },
-            "defaultConfiguration": "production"
-          },
           "test": {
             "inputs": [
               "default",
@@ -264,7 +265,7 @@
               "{workspaceRoot}/coverage/{projectRoot}"
             ],
             "options": {
-              "jestConfig": "libs/elements/layout/footer/jest.config.ts",
+              "jestConfig": "libs/models/schema/ui/texts/jest.config.ts",
               "passWithNoTests": true
             },
             "configurations": {
@@ -285,15 +286,14 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "libs/elements/layout/footer/**/*.ts",
-                "libs/elements/layout/footer/**/*.html",
-                "libs/elements/layout/footer/package.json"
+                "libs/models/schema/ui/texts/**/*.ts",
+                "libs/models/schema/ui/texts/**/*.html"
               ]
             },
             "configurations": {}
           }
         },
-        "root": "libs/elements/layout/footer",
+        "root": "libs/models/schema/ui/texts",
         "implicitDependencies": []
       }
     },
@@ -351,14 +351,14 @@
         "implicitDependencies": []
       }
     },
-    "features-pages-about": {
-      "name": "features-pages-about",
+    "features-pages-signup": {
+      "name": "features-pages-signup",
       "type": "lib",
       "data": {
-        "name": "features-pages-about",
+        "name": "features-pages-signup",
         "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/features/pages/about/src",
-        "prefix": "elewa-website",
+        "sourceRoot": "libs/features/pages/signup/src",
+        "prefix": "lucie-website",
         "tags": [],
         "projectType": "library",
         "targets": {
@@ -373,7 +373,7 @@
               "{workspaceRoot}/coverage/{projectRoot}"
             ],
             "options": {
-              "jestConfig": "libs/features/pages/about/jest.config.ts",
+              "jestConfig": "libs/features/pages/signup/jest.config.ts",
               "passWithNoTests": true
             },
             "configurations": {
@@ -394,14 +394,14 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "libs/features/pages/about/**/*.ts",
-                "libs/features/pages/about/**/*.html"
+                "libs/features/pages/signup/**/*.ts",
+                "libs/features/pages/signup/**/*.html"
               ]
             },
             "configurations": {}
           }
         },
-        "root": "libs/features/pages/about",
+        "root": "libs/features/pages/signup",
         "implicitDependencies": []
       }
     },
@@ -456,6 +456,60 @@
           }
         },
         "root": "libs/data/ui/content-text",
+        "implicitDependencies": []
+      }
+    },
+    "features-pages-about": {
+      "name": "features-pages-about",
+      "type": "lib",
+      "data": {
+        "name": "features-pages-about",
+        "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/features/pages/about/src",
+        "prefix": "elewa-website",
+        "tags": [],
+        "projectType": "library",
+        "targets": {
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/features/pages/about/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/features/pages/about/**/*.ts",
+                "libs/features/pages/about/**/*.html"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "root": "libs/features/pages/about",
         "implicitDependencies": []
       }
     },
@@ -15096,10 +15150,30 @@
         "type": "static"
       }
     ],
-    "models-schema-ui-texts": [
+    "elements-layout-footer": [
       {
-        "source": "models-schema-ui-texts",
+        "source": "elements-layout-footer",
+        "target": "npm:tslib",
+        "type": "static"
+      },
+      {
+        "source": "elements-layout-footer",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "elements-layout-footer",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "elements-layout-footer",
         "target": "npm:jest-preset-angular",
+        "type": "static"
+      },
+      {
+        "source": "elements-layout-footer",
+        "target": "npm:@nx/angular",
         "type": "static"
       }
     ],
@@ -15132,30 +15206,10 @@
         "type": "static"
       }
     ],
-    "elements-layout-footer": [
+    "models-schema-ui-texts": [
       {
-        "source": "elements-layout-footer",
-        "target": "npm:tslib",
-        "type": "static"
-      },
-      {
-        "source": "elements-layout-footer",
-        "target": "npm:@angular/common",
-        "type": "static"
-      },
-      {
-        "source": "elements-layout-footer",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "elements-layout-footer",
+        "source": "models-schema-ui-texts",
         "target": "npm:jest-preset-angular",
-        "type": "static"
-      },
-      {
-        "source": "elements-layout-footer",
-        "target": "npm:@nx/angular",
         "type": "static"
       }
     ],
@@ -15186,6 +15240,35 @@
         "type": "static"
       }
     ],
+    "features-pages-signup": [
+      {
+        "source": "features-pages-signup",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "features-pages-signup",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "features-pages-signup",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
+    "data-ui-content-text": [
+      {
+        "source": "data-ui-content-text",
+        "target": "models-schema-ui-texts",
+        "type": "static"
+      },
+      {
+        "source": "data-ui-content-text",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
     "features-pages-about": [
       {
         "source": "features-pages-about",
@@ -15199,18 +15282,6 @@
       },
       {
         "source": "features-pages-about",
-        "target": "npm:jest-preset-angular",
-        "type": "static"
-      }
-    ],
-    "data-ui-content-text": [
-      {
-        "source": "data-ui-content-text",
-        "target": "models-schema-ui-texts",
-        "type": "static"
-      },
-      {
-        "source": "data-ui-content-text",
         "target": "npm:jest-preset-angular",
         "type": "static"
       }

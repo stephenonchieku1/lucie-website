@@ -106,55 +106,13 @@
     ],
     "@lucie-website/features/pages/loginpage": [
       "libs/features/pages/loginpage/src/index.ts"
+    ],
+    "@lucie-website/features/pages/signup": [
+      "libs/features/pages/signup/src/index.ts"
     ]
   },
   "nxJsonPlugins": [],
   "projectFileMap": {
-    "models-schema-ui-texts": [
-      {
-        "file": "libs/models/schema/ui/texts/.eslintrc.json",
-        "hash": "8437903270990702588"
-      },
-      {
-        "file": "libs/models/schema/ui/texts/README.md",
-        "hash": "11502040448221959291"
-      },
-      {
-        "file": "libs/models/schema/ui/texts/jest.config.ts",
-        "hash": "16145021743018678813"
-      },
-      {
-        "file": "libs/models/schema/ui/texts/project.json",
-        "hash": "2939056402135604445"
-      },
-      {
-        "file": "libs/models/schema/ui/texts/src/index.ts",
-        "hash": "18417599429050887650"
-      },
-      {
-        "file": "libs/models/schema/ui/texts/src/lib/content-text.interface.ts",
-        "hash": "17121146289856830019"
-      },
-      {
-        "file": "libs/models/schema/ui/texts/src/test-setup.ts",
-        "hash": "12935735732682149507",
-        "deps": [
-          "npm:jest-preset-angular"
-        ]
-      },
-      {
-        "file": "libs/models/schema/ui/texts/tsconfig.json",
-        "hash": "15064525358714244092"
-      },
-      {
-        "file": "libs/models/schema/ui/texts/tsconfig.lib.json",
-        "hash": "9669409076303669727"
-      },
-      {
-        "file": "libs/models/schema/ui/texts/tsconfig.spec.json",
-        "hash": "16136671043651190719"
-      }
-    ],
     "features-pages-loginpage": [
       {
         "file": "libs/features/pages/loginpage/.eslintrc.json",
@@ -185,6 +143,28 @@
         ]
       },
       {
+        "file": "libs/features/pages/loginpage/src/lib/login/login.component.html",
+        "hash": "15037950857834361771"
+      },
+      {
+        "file": "libs/features/pages/loginpage/src/lib/login/login.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/features/pages/loginpage/src/lib/login/login.component.spec.ts",
+        "hash": "17907434593268500275",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/features/pages/loginpage/src/lib/login/login.component.ts",
+        "hash": "2218243807942344590",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
         "file": "libs/features/pages/loginpage/src/test-setup.ts",
         "hash": "12935735732682149507",
         "deps": [
@@ -201,6 +181,114 @@
       },
       {
         "file": "libs/features/pages/loginpage/tsconfig.spec.json",
+        "hash": "9840611283105717156"
+      }
+    ],
+    "lucie-website-e2e": [
+      {
+        "file": "apps/lucie-website-e2e/.eslintrc.json",
+        "hash": "15523834149352881398"
+      },
+      {
+        "file": "apps/lucie-website-e2e/cypress.config.ts",
+        "hash": "212614215478757206",
+        "deps": [
+          "npm:cypress",
+          "npm:@nrwl/cypress"
+        ]
+      },
+      {
+        "file": "apps/lucie-website-e2e/project.json",
+        "hash": "11554474348100345772"
+      },
+      {
+        "file": "apps/lucie-website-e2e/src/e2e/app.cy.ts",
+        "hash": "560315947605732934"
+      },
+      {
+        "file": "apps/lucie-website-e2e/src/fixtures/example.json",
+        "hash": "11614668686582597233"
+      },
+      {
+        "file": "apps/lucie-website-e2e/src/support/app.po.ts",
+        "hash": "11157016311132186162"
+      },
+      {
+        "file": "apps/lucie-website-e2e/src/support/commands.ts",
+        "hash": "7314691991044890572"
+      },
+      {
+        "file": "apps/lucie-website-e2e/src/support/e2e.ts",
+        "hash": "3666078656922506009"
+      },
+      {
+        "file": "apps/lucie-website-e2e/tsconfig.json",
+        "hash": "3839629211904585536"
+      }
+    ],
+    "elements-layout-texts": [
+      {
+        "file": "libs/elements/layout/texts/.eslintrc.json",
+        "hash": "10813456432126434101"
+      },
+      {
+        "file": "libs/elements/layout/texts/README.md",
+        "hash": "2976406549369438283"
+      },
+      {
+        "file": "libs/elements/layout/texts/jest.config.ts",
+        "hash": "6449854232031905694"
+      },
+      {
+        "file": "libs/elements/layout/texts/project.json",
+        "hash": "14070709232090637040"
+      },
+      {
+        "file": "libs/elements/layout/texts/src/index.ts",
+        "hash": "3795177455682940502"
+      },
+      {
+        "file": "libs/elements/layout/texts/src/lib/components/elewa-text-content-item/elewa-text-content-item.component.html",
+        "hash": "3329751870608680315"
+      },
+      {
+        "file": "libs/elements/layout/texts/src/lib/components/elewa-text-content-item/elewa-text-content-item.component.scss",
+        "hash": "12385825664927134679"
+      },
+      {
+        "file": "libs/elements/layout/texts/src/lib/components/elewa-text-content-item/elewa-text-content-item.component.ts",
+        "hash": "2321384434168385462",
+        "deps": [
+          "npm:@angular/core",
+          "data-ui-content-text",
+          "models-schema-ui-texts"
+        ]
+      },
+      {
+        "file": "libs/elements/layout/texts/src/lib/texts.module.ts",
+        "hash": "11394590660706544640",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/common"
+        ]
+      },
+      {
+        "file": "libs/elements/layout/texts/src/test-setup.ts",
+        "hash": "12935735732682149507",
+        "deps": [
+          "npm:jest-preset-angular"
+        ]
+      },
+      {
+        "file": "libs/elements/layout/texts/tsconfig.json",
+        "hash": "16248533471678702062"
+      },
+      {
+        "file": "libs/elements/layout/texts/tsconfig.lib.json",
+        "hash": "8746075233993636049"
+      },
+      {
+        "file": "libs/elements/layout/texts/tsconfig.spec.json",
         "hash": "9840611283105717156"
       }
     ],
@@ -537,6 +625,55 @@
         "hash": "6658172359945877284"
       }
     ],
+    "features-pages-signup": [
+      {
+        "file": "libs/features/pages/signup/.eslintrc.json",
+        "hash": "14211425310082264206"
+      },
+      {
+        "file": "libs/features/pages/signup/README.md",
+        "hash": "14818522405865237571"
+      },
+      {
+        "file": "libs/features/pages/signup/jest.config.ts",
+        "hash": "17178645305646840689"
+      },
+      {
+        "file": "libs/features/pages/signup/project.json",
+        "hash": "13028793925747694064"
+      },
+      {
+        "file": "libs/features/pages/signup/src/index.ts",
+        "hash": "16591352717372092677"
+      },
+      {
+        "file": "libs/features/pages/signup/src/lib/features-pages-signup.module.ts",
+        "hash": "13642721320553170902",
+        "deps": [
+          "npm:@angular/core",
+          "npm:@angular/common"
+        ]
+      },
+      {
+        "file": "libs/features/pages/signup/src/test-setup.ts",
+        "hash": "12935735732682149507",
+        "deps": [
+          "npm:jest-preset-angular"
+        ]
+      },
+      {
+        "file": "libs/features/pages/signup/tsconfig.json",
+        "hash": "16248533471678702062"
+      },
+      {
+        "file": "libs/features/pages/signup/tsconfig.lib.json",
+        "hash": "8746075233993636049"
+      },
+      {
+        "file": "libs/features/pages/signup/tsconfig.spec.json",
+        "hash": "9840611283105717156"
+      }
+    ],
     "features-pages-home": [
       {
         "file": "libs/features/pages/home/.eslintrc.json",
@@ -785,157 +922,49 @@
         "hash": "7159729809249402441"
       }
     ],
-    "models-schema-ui-cards": [
+    "models-schema-ui-texts": [
       {
-        "file": "libs/models/schema/ui/cards/.eslintrc.json",
+        "file": "libs/models/schema/ui/texts/.eslintrc.json",
         "hash": "8437903270990702588"
       },
       {
-        "file": "libs/models/schema/ui/cards/README.md",
-        "hash": "9024505527094043146"
+        "file": "libs/models/schema/ui/texts/README.md",
+        "hash": "11502040448221959291"
       },
       {
-        "file": "libs/models/schema/ui/cards/jest.config.ts",
-        "hash": "4457112250248963838"
+        "file": "libs/models/schema/ui/texts/jest.config.ts",
+        "hash": "16145021743018678813"
       },
       {
-        "file": "libs/models/schema/ui/cards/project.json",
-        "hash": "5840927723913769206"
+        "file": "libs/models/schema/ui/texts/project.json",
+        "hash": "2939056402135604445"
       },
       {
-        "file": "libs/models/schema/ui/cards/src/index.ts",
-        "hash": "3617310859732681027"
+        "file": "libs/models/schema/ui/texts/src/index.ts",
+        "hash": "18417599429050887650"
       },
       {
-        "file": "libs/models/schema/ui/cards/src/lib/info-card.interface.ts",
-        "hash": "3392474523556203797"
+        "file": "libs/models/schema/ui/texts/src/lib/content-text.interface.ts",
+        "hash": "17121146289856830019"
       },
       {
-        "file": "libs/models/schema/ui/cards/src/test-setup.ts",
+        "file": "libs/models/schema/ui/texts/src/test-setup.ts",
         "hash": "12935735732682149507",
         "deps": [
           "npm:jest-preset-angular"
         ]
       },
       {
-        "file": "libs/models/schema/ui/cards/tsconfig.json",
+        "file": "libs/models/schema/ui/texts/tsconfig.json",
         "hash": "15064525358714244092"
       },
       {
-        "file": "libs/models/schema/ui/cards/tsconfig.lib.json",
+        "file": "libs/models/schema/ui/texts/tsconfig.lib.json",
         "hash": "9669409076303669727"
       },
       {
-        "file": "libs/models/schema/ui/cards/tsconfig.spec.json",
+        "file": "libs/models/schema/ui/texts/tsconfig.spec.json",
         "hash": "16136671043651190719"
-      }
-    ],
-    "elements-layout-texts": [
-      {
-        "file": "libs/elements/layout/texts/.eslintrc.json",
-        "hash": "10813456432126434101"
-      },
-      {
-        "file": "libs/elements/layout/texts/README.md",
-        "hash": "2976406549369438283"
-      },
-      {
-        "file": "libs/elements/layout/texts/jest.config.ts",
-        "hash": "6449854232031905694"
-      },
-      {
-        "file": "libs/elements/layout/texts/project.json",
-        "hash": "14070709232090637040"
-      },
-      {
-        "file": "libs/elements/layout/texts/src/index.ts",
-        "hash": "3795177455682940502"
-      },
-      {
-        "file": "libs/elements/layout/texts/src/lib/components/elewa-text-content-item/elewa-text-content-item.component.html",
-        "hash": "3329751870608680315"
-      },
-      {
-        "file": "libs/elements/layout/texts/src/lib/components/elewa-text-content-item/elewa-text-content-item.component.scss",
-        "hash": "12385825664927134679"
-      },
-      {
-        "file": "libs/elements/layout/texts/src/lib/components/elewa-text-content-item/elewa-text-content-item.component.ts",
-        "hash": "2321384434168385462",
-        "deps": [
-          "npm:@angular/core",
-          "data-ui-content-text",
-          "models-schema-ui-texts"
-        ]
-      },
-      {
-        "file": "libs/elements/layout/texts/src/lib/texts.module.ts",
-        "hash": "11394590660706544640",
-        "deps": [
-          "npm:@angular/core",
-          "npm:@angular/common"
-        ]
-      },
-      {
-        "file": "libs/elements/layout/texts/src/test-setup.ts",
-        "hash": "12935735732682149507",
-        "deps": [
-          "npm:jest-preset-angular"
-        ]
-      },
-      {
-        "file": "libs/elements/layout/texts/tsconfig.json",
-        "hash": "16248533471678702062"
-      },
-      {
-        "file": "libs/elements/layout/texts/tsconfig.lib.json",
-        "hash": "8746075233993636049"
-      },
-      {
-        "file": "libs/elements/layout/texts/tsconfig.spec.json",
-        "hash": "9840611283105717156"
-      }
-    ],
-    "lucie-website-e2e": [
-      {
-        "file": "apps/lucie-website-e2e/.eslintrc.json",
-        "hash": "15523834149352881398"
-      },
-      {
-        "file": "apps/lucie-website-e2e/cypress.config.ts",
-        "hash": "212614215478757206",
-        "deps": [
-          "npm:cypress",
-          "npm:@nrwl/cypress"
-        ]
-      },
-      {
-        "file": "apps/lucie-website-e2e/project.json",
-        "hash": "11554474348100345772"
-      },
-      {
-        "file": "apps/lucie-website-e2e/src/e2e/app.cy.ts",
-        "hash": "560315947605732934"
-      },
-      {
-        "file": "apps/lucie-website-e2e/src/fixtures/example.json",
-        "hash": "11614668686582597233"
-      },
-      {
-        "file": "apps/lucie-website-e2e/src/support/app.po.ts",
-        "hash": "11157016311132186162"
-      },
-      {
-        "file": "apps/lucie-website-e2e/src/support/commands.ts",
-        "hash": "7314691991044890572"
-      },
-      {
-        "file": "apps/lucie-website-e2e/src/support/e2e.ts",
-        "hash": "3666078656922506009"
-      },
-      {
-        "file": "apps/lucie-website-e2e/tsconfig.json",
-        "hash": "3839629211904585536"
       }
     ],
     "elements-layout-footer": [
@@ -1032,6 +1061,51 @@
       {
         "file": "libs/elements/layout/footer/tsconfig.spec.json",
         "hash": "9840611283105717156"
+      }
+    ],
+    "models-schema-ui-cards": [
+      {
+        "file": "libs/models/schema/ui/cards/.eslintrc.json",
+        "hash": "8437903270990702588"
+      },
+      {
+        "file": "libs/models/schema/ui/cards/README.md",
+        "hash": "9024505527094043146"
+      },
+      {
+        "file": "libs/models/schema/ui/cards/jest.config.ts",
+        "hash": "4457112250248963838"
+      },
+      {
+        "file": "libs/models/schema/ui/cards/project.json",
+        "hash": "5840927723913769206"
+      },
+      {
+        "file": "libs/models/schema/ui/cards/src/index.ts",
+        "hash": "3617310859732681027"
+      },
+      {
+        "file": "libs/models/schema/ui/cards/src/lib/info-card.interface.ts",
+        "hash": "3392474523556203797"
+      },
+      {
+        "file": "libs/models/schema/ui/cards/src/test-setup.ts",
+        "hash": "12935735732682149507",
+        "deps": [
+          "npm:jest-preset-angular"
+        ]
+      },
+      {
+        "file": "libs/models/schema/ui/cards/tsconfig.json",
+        "hash": "15064525358714244092"
+      },
+      {
+        "file": "libs/models/schema/ui/cards/tsconfig.lib.json",
+        "hash": "9669409076303669727"
+      },
+      {
+        "file": "libs/models/schema/ui/cards/tsconfig.spec.json",
+        "hash": "16136671043651190719"
       }
     ]
   }
