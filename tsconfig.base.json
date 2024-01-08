@@ -42,6 +42,9 @@
       "@elewa-website/models/ui/images": ["libs/models/ui/images/src/index.ts"],
       "@lucie-website/elements/layout/footer": [
         "libs/elements/layout/footer/src/index.ts"
+      ],
+      "@lucie-website/features/pages/loginpage": [
+        "libs/features/pages/loginpage/src/index.ts"
       ]
     }
   },

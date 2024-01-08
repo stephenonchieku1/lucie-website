@@ -1,8 +1,8 @@
 {
   "run": {
-    "command": "nx serve",
-    "startTime": "2024-01-04T17:50:22.794Z",
-    "endTime": "2024-01-04T22:20:50.140Z",
+    "command": "ng serve",
+    "startTime": "2024-01-05T13:10:28.868Z",
+    "endTime": "2024-01-05T20:48:11.647Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "lucie-website:serve:development",
       "target": "serve",
       "projectName": "lucie-website",
-      "hash": "7039831268612104170",
-      "startTime": "2024-01-04T17:50:22.862Z",
-      "endTime": "2024-01-04T22:20:50.128Z",
+      "hash": "17970582930364027462",
+      "startTime": "2024-01-05T13:10:28.897Z",
+      "endTime": "2024-01-05T20:48:11.642Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1
