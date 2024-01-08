@@ -648,7 +648,7 @@
       },
       {
         "file": "libs/features/pages/signup/src/lib/features-pages-signup.module.ts",
-        "hash": "13642721320553170902",
+        "hash": "16486186998204664234",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common"
@@ -672,6 +672,24 @@
       {
         "file": "libs/features/pages/signup/tsconfig.spec.json",
         "hash": "9840611283105717156"
+      },
+      {
+        "file": "libs/features/pages/signup/src/lib/signup/signup.component.spec.ts",
+        "hash": "12752168390694418245",
+        "deps": [
+          "npm:@angular/core"
+        ]
+      },
+      {
+        "file": "libs/features/pages/signup/src/lib/signup/signup.component.html",
+        "hash": "2994790455426740040"
+      },
+      {
+        "file": "libs/features/pages/signup/src/lib/signup/signup.component.ts",
+        "hash": "8502016858755946057",
+        "deps": [
+          "npm:@angular/core"
+        ]
       }
     ],
     "features-pages-home": [
