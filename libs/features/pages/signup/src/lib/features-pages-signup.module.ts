@@ -5,5 +5,6 @@ import { SignupComponent } from './signup/signup.component';
 @NgModule({
   imports: [CommonModule],
   declarations: [SignupComponent],
+  exports: [SignupComponent],
 })
 export class FeaturesPagesSignupModule {}
