@@ -715,11 +715,13 @@
       },
       {
         "file": "libs/features/pages/home/src/lib/features-pages-home.module.ts",
-        "hash": "476482324712947221",
+        "hash": "1088610721651727951",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common",
-          "elements-layout-footer"
+          "elements-layout-footer",
+          "features-pages-loginpage",
+          "features-pages-signup"
         ]
       },
       {
